@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 5
+collision_mask = 5
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( -32, 0 )
+color = Color( 0, 0.741176, 1, 1 )
+polygon = PoolVector2Array( -72, 0, -20, -88, 84, -88, 136, 0, 84, 88, -20, 88 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 104, 0, 52, -88, -52, -88, -104, 0, -52, 88, 52, 88 )
